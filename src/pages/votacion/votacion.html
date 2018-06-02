@@ -1,0 +1,46 @@
+<!--
+  Generated template for the VotacionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-header>
+  <ion-toolbar >
+    <ion-navbar >
+      <ion-title >Votación</ion-title>
+    </ion-navbar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content >
+  <ion-content  class="card-background-page">
+
+    <ion-card class="imgVot1">
+      <img class="img1" (click)="votoPlanta()" src="assets/img/planta.png"/>
+      <div *ngIf="usuarioFirebase === false" (click)="votoPlanta()" class="card-title">{{msjVoto}}</div>
+      <div *ngIf="usuarioFirebase === true" (click)="votoPlanta()" class="card-title">{{msjVoto}}</div>
+    </ion-card>
+  
+    <ion-card  class="imgVot2" color="matafuego">
+      <img class="img2" (click)="votoMatafuego()" src="assets/img/matafuego.png"/>
+      <div *ngIf="usuarioFirebase === false" (click)="votoMatafuego()" class="card-title">{{msjVoto}}</div>
+      <div *ngIf="usuarioFirebase === true" (click)="votoMatafuego()" class="card-title">{{msjVoto}}</div>
+    </ion-card>
+  
+  </ion-content>
+  <!-- <input class="imgVot" type="image"  img src="assets/img/planta.png">
+  <input class="imgVot" type="image" img src="assets/img/matafuego.png" > -->
+
+  <ion-fab right bottom>
+    <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+    <ion-fab-list side="left">
+      <button ion-fab (click)="cerrarSesion()"><ion-icon name="md-log-out"></ion-icon></button>
+      <!-- <button ion-fab><ion-icon name="ios-download-outline"></ion-icon></button> -->
+      <button ion-fab (click)="verVotos()" ><ion-icon name="md-checkbox-outline"></ion-icon></button>
+      <!-- <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button> -->
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

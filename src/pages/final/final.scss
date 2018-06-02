@@ -1,0 +1,77 @@
+page-final {
+    .final-content {
+        background-color: rgb(231, 228, 228);
+    }
+    .fondoPlanta{
+        //margin: 2px;
+        background: darkseagreen;
+        //border: 1px solid #333333;
+        border: 1px solid #333333;
+
+    }
+    .fondoMata{
+        //margin: 2px;
+        background: #ffcdd2;
+        //border: 1px solid #333333;
+        border: 1px solid #333333;
+    }
+    img{
+        max-width: 69.7%;
+    }
+    h2{
+        color: #2E2E2E;
+    }
+    ion-badge {
+        padding: 4px 8px;
+        text-align: center;
+        display: inline-block;
+        min-width: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1;
+        white-space: nowrap;
+        vertical-align: baseline;
+    }
+    .badge-md {
+        border-radius: 4px;
+        color: #fff;
+        background-color: #0d47a1;
+    }
+    .button-large-md {
+        height: 8.8em;
+        font-size: 2rem;
+        padding: 0 1em;
+    }
+    .btnSalir{
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        animation-duration: 400ms;
+        animation-name: slidein;
+        @keyframes slidein {
+            from {
+              margin-left: 100%;
+              width: 300%; 
+            }
+         
+            to {
+              margin-left: 0%;
+              width: 100%;
+            }
+          }
+    }
+    .btnSalir:hover{
+        background-color: #0a326e;
+        //box-shadow: 1px 1px 18px 2px #000;
+        //transform: translateY(4px);
+    }
+    .btnSalir:active {
+        background-color: #0a326e;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+    
+}
+
+
+

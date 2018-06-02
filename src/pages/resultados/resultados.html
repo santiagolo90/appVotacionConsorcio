@@ -1,0 +1,89 @@
+<!--
+  Generated template for the ResultadosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Resultados</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content text-center class="resultados-content">
+
+
+<div class="imagenes">
+  <ion-grid >
+      <ion-row  >
+        <ion-col class="colPlanta" >
+            <img src="assets/img/planta.png" alt="" srcset="">
+        </ion-col>
+        <ion-col class="colMata">
+          <img src="assets/img/matafuego.png" alt="" srcset="">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+        <ion-row  >
+          <ion-col class="colPlantaPuntos">
+            <h2>Votos <ion-badge item-end>{{votosPlanta}}</ion-badge> </h2>
+          </ion-col>
+          <ion-col class="colMataPuntos">
+              <h2>Votos <ion-badge item-end>{{votosMata}}</ion-badge> </h2>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+</div>
+<div padding>
+  <button class="btnFinalizar" ion-button full large icon-left color="boton" (click)="presentProfileModal()"> <ion-icon name="checkmark-circle"></ion-icon> Finalizar votación</button>
+</div>
+
+
+
+
+</ion-content>
+
+
+<!-- 
+
+
+  <ion-header>
+      <ion-toolbar color="planta">
+        <ion-title><h2>Votos por plantas <ion-badge item-end>{{votosPlanta}}</ion-badge> </h2></ion-title>
+      </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div class="fondoPlanta">
+        <img class="imagen1" src="assets/img/planta.png" alt="" srcset="">
+    </div>
+
+      <div  class="fondoMata">
+          <img class="imagen2" src="assets/img/matafuego.png" alt="" srcset="">
+      </div>
+
+      <ion-fab right bottom>
+          <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+          <ion-fab-list side="left">
+            <button ion-fab (click)="cerrarSesion()"><ion-icon name="md-log-out"></ion-icon></button>
+            <button ion-fab  ><ion-icon name="md-checkbox-outline"></ion-icon></button>
+          </ion-fab-list>
+        </ion-fab>
+      
+  </ion-content>
+
+  <ion-footer>
+    <ion-toolbar color="matafuego">
+      <ion-title><h2>Votos por matafuego <ion-badge item-end>{{votosMata}}</ion-badge> </h2></ion-title>
+    </ion-toolbar>
+  </ion-footer>
+
+
+
+ -->

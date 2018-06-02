@@ -1,0 +1,88 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+    <div class="flb">
+      <div class="Aligner-item Aligner-item--top">
+        
+      </div>
+      <img src="assets/img/Logo.png">
+      <div class="Aligner-item Aligner-item--bottom">
+        
+      </div>
+    </div>
+  </div>
+<ion-header>
+    <ion-navbar >
+      <ion-title>Iniciar sesión</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content class="loginAnimacion" >
+    <!-- <form  (ngSubmit)="iniciarSesion()"> -->
+
+      <!-- <div padding class="colorBoton">  
+      </div> -->
+      <div class="botonLogin">
+        <ion-row>
+            <ion-col class="signup-col">
+                <button color="botonLogin" ion-button full icon-left (click)="iniciarSesion()" class="submit-btn">
+                    <ion-icon  name="md-log-in"></ion-icon> Iniciar sesión
+                </button>
+              <button ion-button class="register-btn" block clear (click)="registrarUsuario()">Crear una cuenta</button>
+            </ion-col>
+          </ion-row>
+      </div>
+<!-- </form> -->
+
+
+
+<div class="login-box">
+  <ion-row>
+    <ion-col>
+      <ion-list>
+        <ion-item>
+          <ion-label floating>Usuario</ion-label>
+          <ion-input  type="email" [(ngModel)]="usuario"> </ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>Contraseña</ion-label>
+          <ion-input  type="password"  [(ngModel)]="clave"></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+
+  <div padding class="selectUsuario">
+      <!-- <ion-row>
+        <ion-col >
+          <ion-list >
+            <ion-item>
+              <ion-label >Seleccionar Usuario</ion-label>
+              <ion-select class="" name="firstField" [(ngModel)]="usuarioSeleccionado" (ionChange)="SeleccionarUsuario()">
+                <ion-option value="admin">admin</ion-option>
+                <ion-option value="invitado">invitado</ion-option>
+                <ion-option value="usuario">usuario</ion-option>
+                <ion-option value="anonimo">anonimo</ion-option>
+                <ion-option value="tester">tester</ion-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row> -->
+  <button  ion-button block color="botonLogin"  outline (click)="doRadio()">Seleccionar Usuario</button>
+
+    </div>
+  
+</div>
+
+
+
+
+</ion-content>
+
